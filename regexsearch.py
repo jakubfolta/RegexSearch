@@ -9,11 +9,9 @@ import re
 regex = re.compile(r'(\w){4, 5}?\.$')
 
 # Open new file to save the result.
-with open('result.txt' 'w') as result:
-
-
+with open('result.txt', 'w') as result:
 # TODO: Open all files.
-
+    print(os.getcwd())
 # TODO: Search files for regular expressions and save it to a new file.
 
 # TODO: Print the file with result to the screen.
