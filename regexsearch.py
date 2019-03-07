@@ -3,10 +3,14 @@
 # A program that opens all files in the folder, search for user supplied regular expression and print the result to the screen.
 
 import os
+import re
 
-# TODO: Write regular expression.
+# Write regular expression.
+regex = re.compile(r'(\w){4, 5}?\.$')
 
-# TODO: Open new file to save the result.
+# Open new file to save the result.
+with open('result.txt' 'w') as result:
+
 
 # TODO: Open all files.
 
