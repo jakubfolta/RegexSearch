@@ -14,7 +14,7 @@ with open('result.txt', 'w') as result:
 # Change directory to folder with files to check.
     os.chdir('C:\\Users\ogi-8\Desktop\PythonProjects\RegexSearch\FilesToSearch')
 
-# TODO: Search files for regular expressions in a for loop and save the match to a new file.
+# Search files for regular expressions in a for loop and save the match to a new file.
     for file in os.listdir(os.getcwd()):
         print(file)
         text_file = open(file)
@@ -22,5 +22,7 @@ with open('result.txt', 'w') as result:
         print(matches)
         result.write(matches)
 
-
-# TODO: Print the file with result to the screen.
+# Print the file with result to the screen.
+os.chdir('C:\\Users\ogi-8\Desktop\PythonProjects\RegexSearch')
+with open('result.txt') as read_file:
+    print(read_file.read())
