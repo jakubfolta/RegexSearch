@@ -12,7 +12,8 @@ regex = re.compile(r'(\w){4, 5}?\.$')
 with open('result.txt', 'w') as result:
 # TODO: Open all files.
     os.chdir
-    print(os.listdir())
+    print(os.listdir(C:\Users\ogi-8\Desktop\PythonProjects\RegexSearch\FilesToSearch))
 # TODO: Search files for regular expressions and save it to a new file.
+
 
 # TODO: Print the file with result to the screen.
