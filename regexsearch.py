@@ -6,7 +6,7 @@ import os
 import re
 
 # Write regular expression.
-regex = re.compile(r'(\w){4, 5}')
+regex = re.compile(r'\s(\w')
 
 # Open new file to save the result.
 with open('result.txt', 'w') as result:
@@ -17,9 +17,9 @@ with open('result.txt', 'w') as result:
 # TODO: Search files for regular expressions in a for loop and save the match to a new file.
     for file in os.listdir(os.getcwd()):
         print(file)
-        text_file = open(file).read()
-        matches = regex.findall(text_file)
-        print(matches)
+        text_file = open(file)
+        print(regex.findall(text_file.read()))
+        #print(matches)
         #result.write(regex.findall(text_file.read()))
 
 
